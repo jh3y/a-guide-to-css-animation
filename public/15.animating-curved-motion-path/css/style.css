@@ -1,0 +1,45 @@
+.wrapper {
+  -webkit-animation: x 2s ease-in-out infinite 1s both;
+          animation: x 2s ease-in-out infinite 1s both;
+}
+
+.wrapper > div {
+  -webkit-animation: y 2s ease-in-out infinite 1s both;
+          animation: y 2s ease-in-out infinite 1s both;
+}
+
+@-webkit-keyframes x {
+  0% {
+    -webkit-transform: translate(-25vw, 0);
+            transform: translate(-25vw, 0);
+  }
+  100% {
+    -webkit-transform: translate(25vw, 0);
+            transform: translate(25vw, 0)
+  }
+}
+
+@keyframes x {
+  0% {
+    -webkit-transform: translate(-25vw, 0);
+            transform: translate(-25vw, 0);
+  }
+  100% {
+    -webkit-transform: translate(25vw, 0);
+            transform: translate(25vw, 0)
+  }
+}
+
+@-webkit-keyframes y {
+  50% {
+    -webkit-transform: translate(0, -20vh);
+            transform: translate(0, -20vh);
+  }
+}
+
+@keyframes y {
+  50% {
+    -webkit-transform: translate(0, -20vh);
+            transform: translate(0, -20vh);
+  }
+}

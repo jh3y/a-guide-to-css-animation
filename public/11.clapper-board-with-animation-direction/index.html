@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Clapper board with animation-direction 🎬</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      align-items: center;
+      background: linear-gradient(45deg, dodgerblue, #00e640);
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      min-height: 100vh;
+      padding: 0;
+      width: 100vw;
+    }
+
+    .clapper {
+      background-color: #111;
+      height: 80px;
+      width: 100px;
+      position: relative;
+    }
+
+    .clapper>div {
+      background: repeating-linear-gradient(135deg, #111 0%, #111 10%, #fff 10%, #fff 20%);
+      height: 10px;
+      width: 110px;
+      position: absolute;
+      left: -5px;
+      top: 0;
+    }
+
+    .clapper>div:nth-of-type(1) {
+      background: repeating-linear-gradient(-135deg, #fff 0%, #fff 10%, #111 10%, #111 20%);
+      top: -10px;
+    }
+  </style>
+  <div class='clapper'>
+    <div></div>
+    <div></div>
+  </div>
+</body>
+</html>

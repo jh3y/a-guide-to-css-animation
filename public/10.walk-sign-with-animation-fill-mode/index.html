@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Walk sign with animation-fill-mode 🚦</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      align-items: center;
+      background: linear-gradient(45deg, dodgerblue, rebeccapurple);
+      display: flex;
+      font-family: 'Heebo', sans-serif;
+      justify-content: center;
+      margin: 0;
+      min-height: 100vh;
+      padding: 0;
+      width: 100vw;
+    }
+
+    .walk-sign {
+      background: #dcaa23;
+      border-radius: 10px;
+      position: relative;
+      padding: 5px;
+    }
+
+    .walk-sign>div {
+      font-size: 2rem;
+      line-height: 2rem;
+      background: #111;
+      color: #f09368;
+      padding: 0 5px;
+    }
+
+    .walk-sign>div:nth-of-type(1) {
+      border-radius: 10px 10px 0 0;
+    }
+
+    .walk-sign>div:nth-of-type(2) {
+      border-radius: 0 0 10px 10px;
+    }
+  </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Heebo:800');
+  </style>
+  <div class='walk-sign'>
+    <div>DONT
+      <br/>WALK</div>
+    <div>WALK</div>
+  </div>
+</body>
+
+</html>

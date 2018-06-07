@@ -1,0 +1,31 @@
+
+div {
+  -webkit-animation: flyIn .5s forwards, rotate .5s .75s forwards;
+          animation: flyIn .5s forwards, rotate .5s .75s forwards;
+}
+@-webkit-keyframes flyIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(300%) scale(0);
+            transform: translateY(300%) scale(0);
+  }
+}
+@keyframes flyIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(300%) scale(0);
+            transform: translateY(300%) scale(0);
+  }
+}
+@-webkit-keyframes rotate {
+  to {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+}
+@keyframes rotate {
+  to {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+}

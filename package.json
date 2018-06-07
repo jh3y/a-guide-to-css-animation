@@ -1,0 +1,12 @@
+{
+  "name": "a-guide-to-css-animation",
+  "version": "0.0.1",
+  "author": "jh3y <jh3y@users.noreply.github.com>",
+  "description": "a guide to css animation",
+  "devDependencies": {},
+  "license": "MIT",
+  "repository": "https://github.com/jh3y/a-guide-to-css-animation",
+  "dependencies": {
+    "browser-sync": "^2.24.4"
+  }
+}

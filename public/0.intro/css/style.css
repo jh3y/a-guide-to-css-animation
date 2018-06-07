@@ -1,0 +1,46 @@
+div {
+  -webkit-animation: flyIn 0.5s, skewLeft 0.25s 0.5s, shootRight 0.5s 0.75s;
+          animation: flyIn 0.5s, skewLeft 0.25s 0.5s, shootRight 0.5s 0.75s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@-webkit-keyframes flyIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(300%) scale(0);
+            transform: translateY(300%) scale(0);
+  }
+}
+@keyframes flyIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(300%) scale(0);
+            transform: translateY(300%) scale(0);
+  }
+}
+@-webkit-keyframes skewLeft {
+  to {
+    -webkit-transform: skew(40deg);
+            transform: skew(40deg);
+  }
+}
+@keyframes skewLeft {
+  to {
+    -webkit-transform: skew(40deg);
+            transform: skew(40deg);
+  }
+}
+@-webkit-keyframes shootRight {
+  to {
+    opacity: 0;
+    -webkit-transform: skew(-60deg) translateX(100vw);
+            transform: skew(-60deg) translateX(100vw);
+  }
+}
+@keyframes shootRight {
+  to {
+    opacity: 0;
+    -webkit-transform: skew(-60deg) translateX(100vw);
+            transform: skew(-60deg) translateX(100vw);
+  }
+}

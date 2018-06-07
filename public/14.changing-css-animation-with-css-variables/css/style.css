@@ -1,0 +1,21 @@
+div {
+  --scale: 1.5;
+  -webkit-animation: change 1s infinite cubic-bezier(.35,.71,.71,.35) 1s;
+          animation: change 1s infinite cubic-bezier(.35,.71,.71,.35) 1s;
+  -webkit-transform: scale(var(--scale));
+          transform: scale(var(--scale));
+}
+
+@-webkit-keyframes change {
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes change {
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}

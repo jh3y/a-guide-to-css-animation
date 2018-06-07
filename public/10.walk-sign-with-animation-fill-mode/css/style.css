@@ -1,0 +1,45 @@
+div > div:nth-of-type(1) {
+  -webkit-animation-name: lightsOff;
+          animation-name: lightsOff;
+  -webkit-animation-duration: .15s;
+          animation-duration: .15s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+div > div:nth-of-type(2) {
+  -webkit-animation-name: lightsOn;
+          animation-name: lightsOn;
+  -webkit-animation-duration: .15s;
+          animation-duration: .15s;
+  -webkit-animation-delay: 1.15s;
+          animation-delay: 1.15s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+@-webkit-keyframes lightsOff {
+  to {
+    color: #000;
+  }
+}
+
+@keyframes lightsOff {
+  to {
+    color: #000;
+  }
+}
+
+@-webkit-keyframes lightsOn {
+  from {
+    color: #000;
+  }
+}
+
+@keyframes lightsOn {
+  from {
+    color: #000;
+  }
+}

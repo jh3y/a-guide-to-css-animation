@@ -1,0 +1,44 @@
+div {
+  -webkit-animation-name: squarePath;
+          animation-name: squarePath;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes squarePath {
+  0%, 100% {
+    -webkit-transform: translate(-100%, -100%);
+            transform: translate(-100%, -100%);
+  }
+  25% {
+    -webkit-transform: translate(100%, -100%);
+            transform: translate(100%, -100%);
+  }
+  50% {
+    -webkit-transform: translate(100%, 100%);
+            transform: translate(100%, 100%);
+  }
+  75% {
+    -webkit-transform: translate(-100%, 100%);
+            transform: translate(-100%, 100%);
+  }
+}
+
+@keyframes squarePath {
+  0%, 100% {
+    -webkit-transform: translate(-100%, -100%);
+            transform: translate(-100%, -100%);
+  }
+  25% {
+    -webkit-transform: translate(100%, -100%);
+            transform: translate(100%, -100%);
+  }
+  50% {
+    -webkit-transform: translate(100%, 100%);
+            transform: translate(100%, 100%);
+  }
+  75% {
+    -webkit-transform: translate(-100%, 100%);
+            transform: translate(-100%, 100%);
+  }
+}

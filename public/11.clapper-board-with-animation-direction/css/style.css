@@ -1,0 +1,30 @@
+.clapper > div:nth-of-type(1) {
+  -webkit-animation-name: open;
+          animation-name: open;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-animation-duration: .25s;
+          animation-duration: .25s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes open {
+  to {
+    -webkit-transform: rotate(-80deg);
+            transform: rotate(-80deg);
+  }
+}
+
+@keyframes open {
+  to {
+    -webkit-transform: rotate(-80deg);
+            transform: rotate(-80deg);
+  }
+}

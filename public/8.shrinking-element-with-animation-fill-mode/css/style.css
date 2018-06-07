@@ -1,0 +1,26 @@
+div {
+  -webkit-animation-name: shrink;
+          animation-name: shrink;
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes shrink {
+  to {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+}
+
+@keyframes shrink {
+  to {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+}
