@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>animation-delay demo</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <h1>No delay</h1>
+    <h1>Delay</h1>
+    <h1>Negative Delay</h1>
+    <h1>Staggered</h1>
+    <h1>Staggered w/ Negative Delay</h1>
+    <h1>Staggered w/ Alternate Direction</h1>
+    <p>Animate simultaneously with no delay</p>
+    <p>Animate simultaneously with a delay</p>
+    <p>Animate simultaneously with a negative delay</p>
+    <p>Use a variable to create a stagger</p>
+    <p>
+      Use an offset to make the delays negative so that the elements retain
+      stagger but don't stagger in
+    </p>
+    <p>
+      Use a negative coefficient to create a stagger in the opposite direction
+    </p>
+    <pre><code>.block {</code><code>  animation-delay: 0s;</code><code>}</code></pre>
+    <pre><code>.block {</code><code>  animation-delay: 2s;</code><code>}</code></pre>
+    <pre><code>.block {</code><code>  animation-delay: -0.5s;</code><code>}</code></pre>
+    <pre><code>.block {</code><code>  animation-delay: calc(var(--index) * 0.25s);</code><code>}</code></pre>
+    <pre><code>.block {</code><code>  animation-delay: calc((var(--index) - 5) * 0.25s);</code><code>}</code></pre>
+    <pre><code>.block {</code><code>  animation-delay: calc(var(--index) * -0.25s);</code><code>}</code></pre>
+    <div class="container">
+      <div class="block" style="--index: 0;"></div>
+      <div class="block" style="--index: 1;"></div>
+      <div class="block" style="--index: 2;"></div>
+      <div class="block" style="--index: 3;"></div>
+      <div class="block" style="--index: 4;"></div>
+    </div>
+    <input type="range" min="0" max="5" value="0" />
+    <script src="js/index.js"></script>
+  </body>
+</html>

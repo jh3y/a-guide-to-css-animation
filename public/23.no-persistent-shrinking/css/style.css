@@ -1,0 +1,13 @@
+div {
+  animation-name: shrink;
+  animation-duration: .5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: none;
+  animation-delay: 1s;
+}
+
+@keyframes shrink {
+  to {
+    transform: scale(0.5);
+  }
+}

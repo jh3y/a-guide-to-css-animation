@@ -1,0 +1,14 @@
+div {
+  animation: throw 2s ease 1s both infinite;
+}
+@keyframes throw {
+  0% {
+    transform: translate(-25vw, 0);
+  }
+  50% {
+    transform: translate(0, -20vh);
+  }
+  100% {
+    transform: translate(25vw, 0);
+  }
+}
