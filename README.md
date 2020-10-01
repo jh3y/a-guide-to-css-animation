@@ -3,6 +3,7 @@
 ![A Guide to CSS Animation](https://cdn-images-1.medium.com/max/800/1*YMIFMQyYdSkmGAus_VZiPw.gif)
 
 This is the demo code for "A Guide to CSS Animation"
+# Every thing is good in your project,just keep all css out of the html file.Thanks You
 
 * [A Guide to CSS Animation - Part 1](https://medium.com/@jh3y/a-guide-to-css-animation-part-1-8777f5beb1f8)
 * [A Guide to CSS Animation - Part 2](https://medium.com/@jh3y/a-guide-to-css-animation-part-2-2cd422f78567)
